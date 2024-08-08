@@ -1,6 +1,12 @@
-#Synkrit Media
+# Synkrit Media Website
 
-#run
+## Setup Project
+Setup SSH Keys.
+Clone the repository and install node modules.
+> npm i
 
--- npm i
--- npm run dev
+## Run Project
+use the following command.
+> npm run dev
+
+run the project using live server and start tinkering.
