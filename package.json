@@ -1,0 +1,25 @@
+{
+  "name": "synkrit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/synkrit-media/synkrit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/synkrit-media/synkrit/issues"
+  },
+  "homepage": "https://github.com/synkrit-media/synkrit#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.8"
+  }
+}
