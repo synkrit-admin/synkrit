@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
   --tertiary-color: #ccc;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Orbitron, sans-serif;
   background-color: #f0f0f3;
   color: #333;
 }
@@ -36,10 +37,10 @@ header .container {
   align-items: center;
 }
 
-/* header .logo h1 {
-  font-size: 2rem;
-  color: #222;
-} */
+header .logo {
+  width: 10rem;
+  /* aspect-ratio: 1/1; */
+}
 
 header nav ul {
   list-style: none;
