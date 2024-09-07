@@ -2,9 +2,9 @@
   window.addEventListener('scroll', function() {
     const navbar = document.getElementById('navbar');
     if (window.scrollY > 50) {
-      navbar.classList.add('navbar-scroll');
+      navbar.classList.add('border');
     } else {
-      navbar.classList.remove('navbar-scroll');
+      navbar.classList.remove('border');
     }
   });
 
