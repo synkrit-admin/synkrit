@@ -1,33 +1,40 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- 
-  <!-- Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-   <!-- Montserrat -->
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   
-   <!-- Inter -->
-   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-   
-   <!-- Open Sans -->
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-   
-  
+  <!-- Poppins -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Inter -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+
   <!-- styles -->
   <link rel="stylesheet" href="./styles/tailwind.css">
   <link rel="stylesheet" href="./styles/on_scroll.css">
-  <!-- <link rel="stylesheet" href="./styles/global.css"> -->
+  <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/fonts.css">
+  <script src="./tailwind.config.js"></script>
 
   <!-- tailwind -->
-  <script src="./tailwind.config.js"></script>
   <!-- Include Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Include Tailwind plugins using CDN -->
@@ -35,38 +42,55 @@
 
 
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
 
-  <div class="max-w-sm rounded overflow-hidden shadow-lg">
-    <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-      <p class="text-gray-700 text-base">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-      </p>
+<body class="bg-gray-100">
+  <nav id="navbar" class="fixed w-full bg-white transition-shadow duration-300 py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <!-- Logo -->
+      <div class="logo font-bold text-xl">LOGO</div>
+
+      <!-- Mobile Menu Button (hidden on larger screens) -->
+      <button id="menu-button" class="block lg:hidden text-gray-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+
+       <!-- Links -->
+       <ul id="nav-links" class="hidden lg:flex space-x-6 items-center">
+        <li><a href="#services" class="hover:text-green-500 transition">Our Services</a></li>
+        <li><a href="#why-us" class="hover:text-green-500 transition">Why Us</a></li>
+        <li><a href="#team" class="hover:text-green-500 transition">Our Team</a></li>
+        <li><a href="#contact" class="hover:text-green-500 transition">Contact Us</a></li>
+        <!-- "Let's Start" Button -->
+        <li>
+          <a href="#start" class="font-bold text-md rounded-md border border-2 border-black border-solid text-green-800 py-1 px-4 hover:bg-black hover:text-white transition">
+            Let's build
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="px-6 pt-4 pb-2">
-      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+
+    <!-- Mobile Menu (visible on small screens) -->
+    <div id="mobile-menu" class="hidden lg:hidden px-4 pb-4">
+      <ul class="space-y-4">
+        <li><a href="#services" class="block hover:text-green-500 transition">Our Services</a></li>
+        <li><a href="#why-us" class="block hover:text-green-500 transition">Why Us</a></li>
+        <li><a href="#team" class="block hover:text-green-500 transition">Our Team</a></li>
+        <li><a href="#contact" class="block hover:text-green-500 transition">Contact Us</a></li>
+        <li>
+          <a href="#start" class="block font-bold text-md rounded-md border border-2 border-black border-solid text-green-800 py-1 px-4 hover:bg-black transition">
+            Let's build
+          </a>
+        </li>
+      </ul>
     </div>
-  </div>
-
-  <h1 class="poppins font-bold text-4xl">Poppins Heading</h1>
-  <p class="inter text-lg">This is body text using Inter font.</p>
-  <div class="montserrat font-medium">Montserrat for medium text</div>
-  <p class="opensans font-light">Open Sans with light weight</p>
-
-  <h1 class=" font-bold text-4xl">This is body ABCDEFGHIJKLMN abcdefghijklmn Poppins</h1>
-  <p class="inter font-bold text-4xl">This is body ABCDEFGHIJKLMN abcdefghijklmn Inter font.</p>
-  <div class="montserrat font-bold text-4xl">This is body ABCDEFGHIJKLMN abcdefghijklmn Montserrat</div>
-  <p class="opensans font-bold text-4xl">This is body ABCDEFGHIJKLMN abcdefghijklmn Open Sans</p>
-  <p class=""></p>
+  </nav>
 
 
   <script src="./js/app.js"></script>
+  <script src="./js/navbar.js"></script>
 </body>
+
 </html>
