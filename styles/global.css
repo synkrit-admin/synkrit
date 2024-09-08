@@ -10,6 +10,9 @@ body{
   background-color: #aaff00;
 }
 
+.selection-green::selection {
+  background-color: #aaff00;
+}
 
 .border-color-green{
   border-color: #aaff00
