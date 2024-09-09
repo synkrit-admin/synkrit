@@ -1,0 +1,16 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #fff;  
+    /* Adjust the background color as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    /* // Initial shadow */
+  }
+  
+  header.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    /* // Increased shadow when scrolled */
+  }

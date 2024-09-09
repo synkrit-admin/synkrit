@@ -1,0 +1,20 @@
+
+<div id="connectModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden"></div>
+  <div class="bg-white rounded-lg p-6 max-w-lg mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-4">Thank You for Connecting!</h2>
+    <p class="mb-4 text-gray-600">We appreciate your interest. One of our team members will reach out to you shortly.</p>
+    <button class="bg-color-green text-white py-2 px-4 rounded-lg hover:bg-transparent hover:text-black border-color-green border-2 transition duration-300"
+            onclick="closeModal()">Close</button>
+  </div>
+</div>
+<script>
+  function handleConnectClick() {
+    // Show the modal by removing the 'hidden' class
+    document.getElementById('connectModal').classList.remove('hidden');
+  }
+
+  function closeModal() {
+    // Hide the modal by adding the 'hidden' class
+    document.getElementById('connectModal').classList.add('hidden');
+  }
+</script>
