@@ -231,22 +231,3 @@
   font-style: italic;
 }
 
-body {
-  font-family: 'Open Sans';
-}
-
-.h1, h1 {
-  font-family: 'Poppins';
-}
-
-.h2, h2 {
-  font-family: 'Montserrat';
-}
-
-.h3, h3 {
-  font-family: 'Inter';
-}
-
-p, .paragraph {
-  font-family: 'Open Sans';
-} 
