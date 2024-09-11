@@ -47,8 +47,10 @@
   <nav id="navbar" class=" fixed w-full bg-orange transition-shadow duration-300 py-6 lg:px-8">
     <div class="container mx-auto flex justify-between items-center px-4 text-sm font-bold">
       <!-- Logo -->
-      <div class="logo font-bold text-xl">LOGO</div>
-
+      <!-- <div class="logo font-bold text-xl">LOGO</div> -->
+      <a href="#hero-section">
+        <img src="./assets/logo/logo_full.svg" alt="logo" class="h-10">
+      </a>
       <!-- Mobile Menu Button (hidden on larger screens) -->
       <button id="menu-button" class="block lg:hidden text-gray-700">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -59,10 +61,10 @@
 
       <!-- Links -->
       <ul id="nav-links" class="hidden lg:flex space-x-6 items-center">
-        <li><a href="#about-us" class="hover:text-green-500 transition">About Us</a></li>
-        <li><a href="#services" class="hover:text-green-500 transition">Our Services</a></li>
-        <li><a href="#team" class="hover:text-green-500 transition">Our Team</a></li>
-        <li><a href="#contact" class="hover:text-green-500 transition">Contact Us</a></li>
+        <li><a href="#about-us" class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition">About Us</a></li>
+        <li><a href="#services" class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition">Our Services</a></li>
+        <li><a href="#team" class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition">Our Team</a></li>
+        <li><a href="#contact" class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition">Contact Us</a></li>
         <!-- "Let's Start" Button -->
         <li>
           <a href="#start"
@@ -92,17 +94,17 @@
 
 
   <!-- Hero Section -->
-  <section class="flex flex-col-reverse lg:flex-row items-center justify-between py-28 px-4 lg:py-40 lg:px-24">
+  <section class="flex flex-col-reverse lg:flex-row items-center justify-between py-28 px-4 lg:py-40 lg:px-24" id="hero-section">
     <!-- Left Section -->
     <div class="w-full lg:w-3/5 space-y-4">
-      <h1 class="text-6xl font-bold text-black selection-green">Your Digital Success Story Starts Here</h1>
-      <h2 class="text-2xl font-semibold text-black">Let's Build Something Beautiful Together</h2>
+      <h1 class="text-6xl font-bold text-black selection-green leading-tight ">Elevate Your Brand with Expert Digital Marketing Solutions.</h1>
+      <h2 class="text-2xl font-semibold text-black mr-8">From targeted campaigns to innovative content, we provide the tools and expertise to help you grow your business online and outperform the competition.</h2>
       <p class="text-gray-500">
       </p>
       <a href="#connect" id="connect"
         class="border-2 bg-black inline-block text-white py-2 px-6 rounded-lg hover:text-black hover:border-black hover:border-2 hover:bg-transparent transition duration-300"
         onclick="handleConnectClick()">
-        Connect with Us
+        Let’s Elevate Your Brand
       </a>
       <!-- <a href="#connect" id="connect" class="border-2 bg-color-green color-green inline-block text-white py-2 px-6 rounded-lg hover:text-black border-color-green hover:border-2 hover:bg-transparent transition duration-300"  onclick="handleConnectClick()">
       Let's nurture your brand together. Watch your business bloom with our expert digital marketing care.
