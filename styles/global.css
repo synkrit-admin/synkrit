@@ -3,26 +3,49 @@ body{
 }
 
 .color-green{
- color: #aaff00;
+ color: #aaff02;
 }
 
 .bg-color-green{
-  background-color: #aaff00;
+  background-color: #aaff02;
+  display: inline-block;
 }
 
 .navbar_border_bg{
-  background-color: #ececec;
-  border: black 2px;
+  background-color: #ffffff;
+  /* border-bottom: 1px solid rgb(192, 192, 192);  */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .selection-green::selection {
-  background-color: #aaff00;
+  background-color: #aaff02;
 }
 
 .border-color-green{
-  border-color: #aaff00
+  border-color: #aaff02
 }
 
 .border-color-green:hover{
-  border-color: #aaff00
+  border-color: #aaff02
 }
+
+/* fonts --------------------------------- */
+body {
+  font-family: 'Open Sans';
+}
+
+.h1, h1 {
+  font-family: 'Poppins';
+}
+
+.h2, h2 {
+  font-family: 'Montserrat';
+}
+
+.h3, h3 {
+  font-family: 'Inter';
+}
+
+p, .paragraph {
+  font-family: 'Open Sans';
+} 
