@@ -1,0 +1,233 @@
+.poppins {
+  font-family: 'Poppins';
+}
+.montserrat {
+  font-family: 'Montserrat';
+}
+.inter {
+  font-family: 'Inter';
+}
+.opensans {
+  font-family: 'Open Sans';
+}
+
+.open-sans-light {
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+.open-sans-regular {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.open-sans-semibold {
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+.open-sans-bold {
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.open-sans-extrabold {
+  font-family: "Open Sans";
+  font-weight: 800;
+}
+
+/* Inter */
+
+.inter-thin {
+  font-family: "Inter";
+  font-weight: 100;
+}
+
+.inter-extra-light {
+  font-family: "Inter";
+  font-weight: 200;
+}
+
+.inter-light {
+  font-family: "Inter";
+  font-weight: 300;
+}
+
+.inter-regular {
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.inter-medium {
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.inter-semibold {
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+.inter-bold {
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+.inter-extra-bold {
+  font-family: "Inter";
+  font-weight: 800;
+}
+
+.inter-black {
+  font-family: "Inter";
+  font-weight: 900;
+}
+
+/* Montserrat */
+
+.montserrat-thin {
+  font-family: "Montserrat";
+  font-weight: 100;
+}
+
+.montserrat-extra-light {
+  font-family: "Montserrat";
+  font-weight: 200;
+}
+
+.montserrat-light {
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.montserrat-medium {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.montserrat-semibold {
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.montserrat-extra-bold {
+  font-family: "Montserrat";
+  font-weight: 800;
+}
+
+.montserrat-black {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+/* Poppins */
+
+.poppins-thin {
+  font-family: "Poppins";
+  font-weight: 100;
+}
+
+.poppins-extralight {
+  font-family: "Poppins";
+  font-weight: 200;
+}
+
+.poppins-light {
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+.poppins-regular {
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.poppins-medium {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.poppins-semibold {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.poppins-bold {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins";
+  font-weight: 800;
+}
+
+.poppins-black {
+  font-family: "Poppins";
+  font-weight: 900;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins";
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins";
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: italic;
+  
+.poppins-semibold-italic {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins";
+}
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins";
+  font-weight: 900;
+  font-style: italic;
+}
+

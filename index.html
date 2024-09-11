@@ -1,39 +1,605 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Synkrit - Premium Social Media Marketing and Management Agency">
-    <meta name="keywords" content="Social Media, Marketing, Management, Premium Services, Web Development, Shopify, Wordpress, influencer marketing">
-    <meta name="author" content="Synkrit">
-    <title>Synkrit | Social Media Marketing & Management</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Poppins -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Inter -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="./styles/tailwind.css">
+  <link rel="stylesheet" href="./styles/on_scroll.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <script src="./tailwind.config.js"></script>
+
+  <!-- tailwind -->
+  <!-- Include Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Include Tailwind plugins using CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="./assets/full_logo.svg" alt="LOGO"/>
+
+<body class="bg-white ">
+  <!-- navbar -->
+  <nav id="navbar" class=" fixed w-full bg-orange transition-shadow duration-300 py-6 lg:px-8">
+    <div class="container mx-auto flex justify-between items-center px-4 text-sm font-bold">
+      <!-- Logo -->
+      <div class="logo font-bold text-xl">LOGO</div>
+
+      <!-- Mobile Menu Button (hidden on larger screens) -->
+      <button id="menu-button" class="block lg:hidden text-gray-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+
+      <!-- Links -->
+      <ul id="nav-links" class="hidden lg:flex space-x-6 items-center">
+        <li><a href="#about-us" class="hover:text-green-500 transition">About Us</a></li>
+        <li><a href="#services" class="hover:text-green-500 transition">Our Services</a></li>
+        <li><a href="#team" class="hover:text-green-500 transition">Our Team</a></li>
+        <li><a href="#contact" class="hover:text-green-500 transition">Contact Us</a></li>
+        <!-- "Let's Start" Button -->
+        <li>
+          <a href="#start"
+            class="text-black text-md rounded-md border border-2 border-black border-solid py-1 px-4 hover:bg-black hover:text-white transition">
+            Let's start
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Mobile Menu (visible on small screens) -->
+    <div id="mobile-menu" class="hidden lg:hidden px-4 pb-4">
+      <ul class="space-y-4">
+        <li><a href="#services" class="block hover:text-green-500 transition">Our Services</a></li>
+        <li><a href="#why-us" class="block hover:text-green-500 transition">Why Us</a></li>
+        <li><a href="#team" class="block hover:text-green-500 transition">Our Team</a></li>
+        <li><a href="#contact" class="block hover:text-green-500 transition">Contact Us</a></li>
+        <li>
+          <a href="#start"
+            class="color-green block font-bold text-md rounded-md border border-2 border-black border-solid text-green-800 py-1 px-4 hover:bg-black transition">
+            Let's build
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="flex flex-col-reverse lg:flex-row items-center justify-between py-28 px-4 lg:py-40 lg:px-24">
+    <!-- Left Section -->
+    <div class="w-full lg:w-3/5 space-y-4">
+      <h1 class="text-6xl font-bold text-black selection-green">Your Digital Success Story Starts Here</h1>
+      <h2 class="text-2xl font-semibold text-black">Let's Build Something Beautiful Together</h2>
+      <p class="text-gray-500">
+      </p>
+      <a href="#connect" id="connect"
+        class="border-2 bg-black inline-block text-white py-2 px-6 rounded-lg hover:text-black hover:border-black hover:border-2 hover:bg-transparent transition duration-300"
+        onclick="handleConnectClick()">
+        Connect with Us
+      </a>
+      <!-- <a href="#connect" id="connect" class="border-2 bg-color-green color-green inline-block text-white py-2 px-6 rounded-lg hover:text-black border-color-green hover:border-2 hover:bg-transparent transition duration-300"  onclick="handleConnectClick()">
+      Let's nurture your brand together. Watch your business bloom with our expert digital marketing care.
+        Connect with Us
+      </a> -->
+
+    </div>
+
+    <!-- Right Section (SVG) -->
+    <div class="w-full lg:w-2/5 mb-8 lg:mb-0 flex justify-center lg:justify-end">
+      <!-- Replace with your SVG -->
+      <img src="./assets/undraw_grades_re_j7d6.svg" alt="SVG Illustration"
+        class="w-full h-auto max-w-xs lg:max-w-full">
+    </div>
+  </section>
+
+  <!-- <section class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div class="lg:pr-8 lg:pt-4">
+          <h2 class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need to deploy your app</p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+          <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-gray-900">
+                <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+                </svg>
+                Push to deploy
+              </dt>
+              <dd class="inline">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio libero dolor eget.</dd>
             </div>
-            <nav>
-                <ul>
-                    <!-- <li><a href="#hero">Home</a></li> -->
-                    <li><a href="#services">Our Services</a></li>
-                    <li><a href="#why-us">Why Us</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
-            <!-- <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-threads"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div> -->
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-gray-900">
+                <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+                </svg>
+                SSL certificates
+              </dt>
+              <dd class="inline">Sit quis amet rutrum tellus ullamcorper ultricies adipiscing suspendisse semper morbi.</dd>
+            </div>
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-gray-900">
+                <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
+                  <path fill-rule="evenodd" d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z" clip-rule="evenodd" />
+                </svg>
+                Simple queues
+              </dt>
+              <dd class="inline">Quisque est vel vulputate cursus. Risus proin arcu egestas dolor vel iaculis in ipsum mauris.</dd>
+            </div>
+            <div class="relative pl-9">
+              <dt class="inline font-semibold text-gray-900">
+                <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+                </svg>
+                Advanced security
+              </dt>
+              <dd class="inline">Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.</dd>
+            </div>
+          </dl>
         </div>
-    </header>
+        <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442">
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section>
+    <div class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:text-center">
+          <h2 class="text-base font-semibold leading-7 text-green-600">About Us</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need to deploy your
+            app</p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet
+            quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                  </svg>
+                </div>
+                Push to deploy
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper adipiscing
+                suspendisse semper morbi. Odio urna massa nunc massa.</dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                  </svg>
+                </div>
+                SSL certificates
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">Sit quis amet rutrum tellus ullamcorper ultricies
+                libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.</dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                  </svg>
+                </div>
+                Simple queues
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">Quisque est vel vulputate cursus. Risus proin diam nunc
+                commodo. Lobortis auctor congue commodo diam neque.</dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+                  </svg>
+                </div>
+                Advanced security
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">Arcu egestas dolor vel iaculis in ipsum mauris.
+                Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="about-us"  class="bg-gray-100  px-16 pt-32">
+    <div class="container mx-auto">
+      <h2 class="text-center text-base  underline-offset-1 leading-7 mt-4 mb-14">About Us</h2>
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2 lg:px-8 lg:py-24" >
+          <img src="./assets/undraw_meet_the_team_re_4h08-community & response management.svg " alt="Image 1" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="md:w-1/2 p-4">
+  
+          <h1 class=" text-4xl font-bold text-gray-800 mb-4"> <span class="bg-color-green ">A Legacy of Experience.</span> A Vision for the Future.</h1>
+          <p class="text-gray-600 mt-8 mb-4">Synkrit Digital Marketing was born from a simple truth: the digital landscape is constantly evolving With 15 years in the service industry, we witnessed the power of digital marketing firsthand. We saw businesses flourish with the right approach and struggle with the wrong one.That's why we decided to combine our experience with a team of passionate digital specialists.
+            </p>
+            <p class="text-gray-600 mb-4" >At Synkrit, we're not just about trends; we're about understanding your unique brand and target audience. We believe in the power of collaboration, fostering a close-knit team environment that fuels creativity and innovation.</p>
+          <p class="text-gray-600 mb-4">Our success is measured by yours. We're driven by exceeding expectations and delivering results that make a real difference to your bottom line.</p>
+          <div class="flex pt-4">
+            <div class="mx-4 text-left">
+              <h3 class="font-bold text-gray-800">Years</h3>
+              <p class="text-6xl font-bold text-black">15+</p>
+            </div>
+            <div class="mx-4 text-left">
+              <h3 class="font-bold text-gray-800">Clients</h3>
+              <p class="text-6xl font-bold text-black">100+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- our services -->
+  <section id="services">
+    <div class="bg-white py-24 sm:py-32">
+      <h2 class="text-center text-base  underline-offset-1 leading-7 mt-4 mb-14">Services</h2>
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div class="flex flex-col md:flex-row items-start justify-start space-y-4 md:space-y-0 md:space-x-8">
+          <!-- Heading Section -->
+          <div class="flex flex-col md:flex-row ">
+            <h1 class="text-3xl font-bold text-left ">
+              <span class="bg-color-green">
+                Social Media Strategy & Planning
+              </span>
+            </h1>
+          </div>
+          <!-- Paragraph Section -->
+          <p class="text-gray-600 text-left">
+            Tailored strategies to align with your brand goals, Reach the right audience at the right time, Boost
+            engagement, build awareness, and foster relationships.
+          </p>
+        </div>
+
+<!-- main container for gird -->
+        <div class="mx-auto mt-12 max-w-2xl sm:mt-20 lg:mt-16 lg:max-w-7xl">
+          <dl class="grid max-w-xl grid-cols-1 gap-x-16 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+
+            <!-- first card -->
+            <div class=" px-8 text-black text-md rounded-3xl border border-2 border-black border-solid py-4 transition hover:text-white border-b-8">
+              <div class="flex flex-row">
+                <div>
+                  <div class=" text-base font-semibold leading-7 text-black">
+                    <h3><span class="bg-color-green">Competitor Analysis and Strategy Development</span></h3>
+                  </div>
+                  <div class="mt-2 pt-6 text-base leading-7 text-gray-600">Uncover hidden opportunities with our in-depth competitor analysis. Gain a competitive edge with tailored strategies.
+                  </div>
+                </div>
+                <div>
+                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- second card -->
+            <div class=" px-8 text-white text-md rounded-3xl border border-2 border-black border-solid py-4 transition bg-black border-b-8">
+              <div class="flex flex-row">
+                <div>
+                  <div class="text-base font-semibold leading-7 text-black">
+                    <h3><span class="bg-white">Social Media Strategy Development</span></h3>
+                  </div>
+                  <div class="mt-2 pt-6 text-white text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
+                    adipiscing
+                    suspendisse semper morbi. Odio urna massa nunc massa.
+                  </div>
+                </div>
+                <div>
+                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- 3rd card -->
+            
+            
+            <div class=" px-8 text-white text-md rounded-3xl border border-2 border-black border-solid py-4 transition bg-black border-b-8">
+              <div class="flex flex-row">
+                <div>
+                  <div class="text-base font-semibold leading-7 text-black">
+                    <h3><span class="bg-white">Social Media Analytics and Reporting</span></h3>
+                  </div>
+                  <div class="mt-2 pt-6 text-white text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
+                    adipiscing
+                    suspendisse semper morbi. Odio urna massa nunc massa.
+                  </div>
+                </div>
+                <div>
+                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- 4th card -->
+            <div class=" px-8 text-black text-md rounded-3xl border border-2 border-black border-solid py-4 transition hover:text-white border-b-8">
+              <div class="flex flex-row">
+                <div>
+                  <div class=" text-base font-semibold leading-7 text-black">
+                    <h3><span class="bg-color-green">Competitor Analysis and Strategy Development</span></h3>
+                  </div>
+                  <div class="mt-2 pt-6 text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
+                    adipiscing
+                    suspendisse semper morbi. Odio urna massa nunc massa.
+                  </div>
+                </div>
+                <div>
+                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
+                </div>
+              </div>
+            </div>
+
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section >
+    <div class="bg-white py-4 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div class="flex flex-col md:flex-row items-start justify-start space-y-4 md:space-y-0 md:space-x-8">
+          <!-- Heading Section -->
+          <div class="flex flex-col md:flex-row ">
+            <h1 class="text-3xl font-bold text-left ">
+              <span class="bg-color-green">
+                Social Media Strategy & Planning
+              </span>
+            </h1>
+          </div>
+          <!-- Paragraph Section -->
+          <p class="text-gray-600 text-left">
+            Tailored strategies to align with your brand goals, Reach the right audience at the right time, Boost
+            engagement, build awareness, and foster relationships.
+          </p>
+        </div>
+
+<!-- main container for gird -->
+        <div class="mx-auto mt-12 max-w-2xl sm:mt-20 lg:mt-16 lg:max-w-7xl">
+          <dl class="grid max-w-xl grid-cols-1 gap-x-16 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+
+            <!-- first card -->
+            <div class=" px-8 text-black text-md rounded-3xl border border-2 border-black border-solid py-4 transition hover:text-white border-b-8">
+              <div class="flex flex-row">
+                <div>
+                  <div class=" text-base font-semibold leading-7 text-black">
+                    <h3><span class="bg-color-green">Competitor Analysis and Strategy Development</span></h3>
+                  </div>
+                  <div class="mt-2 pt-6 text-base leading-7 text-gray-600">Uncover hidden opportunities with our in-depth competitor analysis. Gain a competitive edge with tailored strategies.
+                  </div>
+                </div>
+                <div>
+                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- second card -->
+            <div class=" px-8 text-white text-md rounded-3xl border border-2 border-black border-solid py-4 transition bg-black border-b-8">
+              <div class="flex flex-row">
+                <div>
+                  <div class="text-base font-semibold leading-7 text-black">
+                    <h3><span class="bg-white">Social Media Strategy Development</span></h3>
+                  </div>
+                  <div class="mt-2 pt-6 text-white text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
+                    adipiscing
+                    suspendisse semper morbi. Odio urna massa nunc massa.
+                  </div>
+                </div>
+                <div>
+                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- 3rd card -->
+            
+            
+            <div class=" px-8 text-white text-md rounded-3xl border border-2 border-black border-solid py-4 transition bg-black border-b-8">
+              <div class="flex flex-row">
+                <div>
+                  <div class="text-base font-semibold leading-7 text-black">
+                    <h3><span class="bg-white">Social Media Analytics and Reporting</span></h3>
+                  </div>
+                  <div class="mt-2 pt-6 text-white text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
+                    adipiscing
+                    suspendisse semper morbi. Odio urna massa nunc massa.
+                  </div>
+                </div>
+                <div>
+                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- 4th card -->
+            <div class=" px-8 text-black text-md rounded-3xl border border-2 border-black border-solid py-4 transition hover:text-white border-b-8">
+              <div class="flex flex-row">
+                <div>
+                  <div class=" text-base font-semibold leading-7 text-black">
+                    <h3><span class="bg-color-green">Competitor Analysis and Strategy Development</span></h3>
+                  </div>
+                  <div class="mt-2 pt-6 text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
+                    adipiscing
+                    suspendisse semper morbi. Odio urna massa nunc massa.
+                  </div>
+                </div>
+                <div>
+                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
+                </div>
+              </div>
+            </div>
+
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- <section>
+    <div class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:text-center">
+          <h2 class="text-base font-semibold leading-7 text-green-600">Deploy faster</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need to deploy your
+            app</p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet
+            quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                  </svg>
+                </div>
+                Push to deploy
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper adipiscing
+                suspendisse semper morbi. Odio urna massa nunc massa.</dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                  </svg>
+                </div>
+                SSL certificates
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">Sit quis amet rutrum tellus ullamcorper ultricies
+                libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.</dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                  </svg>
+                </div>
+                Simple queues
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">Quisque est vel vulputate cursus. Risus proin diam nunc
+                commodo. Lobortis auctor congue commodo diam neque.</dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+                  </svg>
+                </div>
+                Advanced security
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">Arcu egestas dolor vel iaculis in ipsum mauris.
+                Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <!-- <section>
+    <div class="bg-white py-24 sm:py-32">
+      <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Libero fames augue nisl porttitor nisi, quis. Id ac elit odio
+            vitae elementum enim vitae ullamcorper suspendisse.</p>
+        </div>
+        <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img class="h-16 w-16 rounded-full"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt="">
+              <div>
+                <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
+              </div>
+            </div>
+          </li>
+
+          
+        </ul>
+      </div>
+    </div>
+
+  </section> -->
+
+
+  <footer class="bg-black text-white lg:round lg:rounded-3xl py-8 px-8 lg:mx-16 lg:mb-10  ">
+    <div class="container mx-auto">
+      <div class="flex justify-between">
+        <div class="flex flex-col max-w-3xl space-y-4">
+          <p class="text-sm">For a house restaurant, we implemented a targeted SEO campaign that resulted in a 25% increase in website traffic and a 15% increase in sales.</p>
+          <a href="#" class="text-blue-500 hover:text-blue-300">Learn more</a>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <p class="text-sm">For a B2B software company, we developed an SEO strategy that resulted in a 50% increase in organic traffic and a 20% increase in conversions.</p>
+          <a href="#" class="text-blue-500 hover:text-blue-300">Learn more</a>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <p class="text-sm">For a small online store, we created a social media campaign that resulted in a 30% increase in followers and a 15% increase in online sales.</p>
+          <a href="#" class="text-blue-500 hover:text-blue-300">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="./js/app.js"></script>
+  <script src="./js/navbar.js"></script>
 </body>
+
+</html>
