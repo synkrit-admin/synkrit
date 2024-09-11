@@ -10,6 +10,11 @@ body{
   background-color: #aaff00;
 }
 
+.navbar_border_bg{
+  background-color: #ececec;
+  border: black 2px;
+}
+
 .selection-green::selection {
   background-color: #aaff00;
 }
