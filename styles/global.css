@@ -8,6 +8,12 @@ body{
   background-color: rgb(234, 234, 234);
 }
 
+.contact_us_background_image{
+  /* background-image: url('./assets/map.svg'); */
+  /* background-size: cover;  */
+  /* transform: scale(0.2); */
+}
+
 .color-green{
  color: var(--accent-green);
 }
