@@ -1,127 +1,203 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Poppins -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <!-- Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    <!-- Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Inter -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+    <!-- Open Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Open Sans -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/tailwind.css" />
+    <link rel="stylesheet" href="./styles/on_scroll.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <script src="./tailwind.config.js"></script>
 
-  <!-- styles -->
-  <link rel="stylesheet" href="./styles/tailwind.css">
-  <link rel="stylesheet" href="./styles/on_scroll.css">
-  <link rel="stylesheet" href="./styles/global.css">
-  <link rel="stylesheet" href="./styles/fonts.css">
-  <script src="./tailwind.config.js"></script>
+    <!-- tailwind -->
+    <!-- Include Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Include Tailwind plugins using CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  </head>
 
-  <!-- tailwind -->
-  <!-- Include Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Include Tailwind plugins using CDN -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <body class="bg-white">
+    <!-- navbar -->
+    <nav
+      id="navbar"
+      class="fixed w-full bg-orange transition-shadow duration-300 py-6 lg:px-8"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center px-4 text-sm font-bold"
+      >
+        <!-- Logo -->
+        <!-- <div class="logo font-bold text-xl">LOGO</div> -->
+        <a href="#hero-section">
+          <img src="./assets/logo/logo_full.svg" alt="logo" class="h-10" />
+        </a>
+        <!-- Mobile Menu Button (hidden on larger screens) -->
+        <button id="menu-button" class="block lg:hidden text-gray-700">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
 
+        <!-- Links -->
+        <ul id="nav-links" class="hidden lg:flex space-x-6 items-center">
+          <li>
+            <a
+              href="#about-us"
+              class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition"
+              >Our Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#team"
+              class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition"
+              >Our Team</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition"
+              >Contact Us</a
+            >
+          </li>
+          <!-- "Let's Start" Button -->
+          <li>
+            <a
+              href="#start"
+              class="text-black text-md rounded-md border border-2 border-black border-solid py-1 px-4 hover:bg-black hover:text-white transition"
+            >
+              Let's start
+            </a>
+          </li>
+        </ul>
+      </div>
 
-</head>
+      <!-- Mobile Menu (visible on small screens) -->
+      <div id="mobile-menu" class="hidden lg:hidden px-4 pb-4">
+        <ul class="space-y-4">
+          <li>
+            <a href="#services" class="block hover:text-green-500 transition"
+              >Our Services</a
+            >
+          </li>
+          <li>
+            <a href="#why-us" class="block hover:text-green-500 transition"
+              >Why Us</a
+            >
+          </li>
+          <li>
+            <a href="#team" class="block hover:text-green-500 transition"
+              >Our Team</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="block hover:text-green-500 transition"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#start"
+              class="color-green block font-bold text-md rounded-md border border-2 border-black border-solid text-green-800 py-1 px-4 hover:bg-black transition"
+            >
+              Let's build
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<body class="bg-white ">
-  <!-- navbar -->
-  <nav id="navbar" class=" fixed w-full bg-orange transition-shadow duration-300 py-6 lg:px-8">
-    <div class="container mx-auto flex justify-between items-center px-4 text-sm font-bold">
-      <!-- Logo -->
-      <!-- <div class="logo font-bold text-xl">LOGO</div> -->
-      <a href="#hero-section">
-        <img src="./assets/logo/logo_full.svg" alt="logo" class="h-10">
-      </a>
-      <!-- Mobile Menu Button (hidden on larger screens) -->
-      <button id="menu-button" class="block lg:hidden text-gray-700">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-          stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-      </button>
-
-      <!-- Links -->
-      <ul id="nav-links" class="hidden lg:flex space-x-6 items-center">
-        <li><a href="#about-us" class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition">About Us</a></li>
-        <li><a href="#services" class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition">Our Services</a></li>
-        <li><a href="#team" class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition">Our Team</a></li>
-        <li><a href="#contact" class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition">Contact Us</a></li>
-        <!-- "Let's Start" Button -->
-        <li>
-          <a href="#start"
-            class="text-black text-md rounded-md border border-2 border-black border-solid py-1 px-4 hover:bg-black hover:text-white transition">
-            Let's start
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Mobile Menu (visible on small screens) -->
-    <div id="mobile-menu" class="hidden lg:hidden px-4 pb-4">
-      <ul class="space-y-4">
-        <li><a href="#services" class="block hover:text-green-500 transition">Our Services</a></li>
-        <li><a href="#why-us" class="block hover:text-green-500 transition">Why Us</a></li>
-        <li><a href="#team" class="block hover:text-green-500 transition">Our Team</a></li>
-        <li><a href="#contact" class="block hover:text-green-500 transition">Contact Us</a></li>
-        <li>
-          <a href="#start"
-            class="color-green block font-bold text-md rounded-md border border-2 border-black border-solid text-green-800 py-1 px-4 hover:bg-black transition">
-            Let's build
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-
-  <!-- Hero Section -->
-  <section class="flex flex-col-reverse lg:flex-row items-center justify-between py-28 px-4 lg:py-40 lg:px-24" id="hero-section">
-    <!-- Left Section -->
-    <div class="w-full lg:w-3/5 space-y-4">
-      <h1 class="text-6xl font-bold text-black selection-green leading-tight ">Elevate Your Brand with Expert Digital Marketing Solutions.</h1>
-      <h2 class="text-2xl font-semibold text-black mr-8">From targeted campaigns to innovative content, we provide the tools and expertise to help you grow your business online and outperform the competition.</h2>
-      <p class="text-gray-500">
-      </p>
-      <a href="#connect" id="connect"
-        class="border-2 bg-black inline-block text-white py-2 px-6 rounded-lg hover:text-black hover:border-black hover:border-2 hover:bg-transparent transition duration-300"
-        onclick="handleConnectClick()">
-        Let’s Elevate Your Brand
-      </a>
-      <!-- <a href="#connect" id="connect" class="border-2 bg-color-green color-green inline-block text-white py-2 px-6 rounded-lg hover:text-black border-color-green hover:border-2 hover:bg-transparent transition duration-300"  onclick="handleConnectClick()">
+    <!-- Hero Section -->
+    <section
+      class="flex flex-col-reverse lg:flex-row items-center justify-between py-28 px-4 lg:py-40 lg:px-24"
+      id="hero-section"
+    >
+      <!-- Left Section -->
+      <div class="w-full lg:w-3/5 space-y-4">
+        <h1 class="text-6xl font-bold text-black selection-green leading-tight">
+          Elevate Your Brand with Expert Digital Marketing Solutions.
+        </h1>
+        <h2 class="text-2xl font-semibold text-black mr-8">
+          From targeted campaigns to innovative content, we provide the tools
+          and expertise to help you grow your business online and outperform the
+          competition.
+        </h2>
+        <p class="text-gray-500"></p>
+        <a
+          href="#connect"
+          id="connect"
+          class="border-2 bg-black inline-block text-white py-2 px-6 rounded-lg hover:text-black hover:border-black hover:border-2 hover:bg-transparent transition duration-300"
+          onclick="handleConnectClick()"
+        >
+          Let’s Elevate Your Brand
+        </a>
+        <!-- <a href="#connect" id="connect" class="border-2 bg-color-green color-green inline-block text-white py-2 px-6 rounded-lg hover:text-black border-color-green hover:border-2 hover:bg-transparent transition duration-300"  onclick="handleConnectClick()">
       Let's nurture your brand together. Watch your business bloom with our expert digital marketing care.
         Connect with Us
       </a> -->
+      </div>
 
-    </div>
+      <!-- Right Section (SVG) -->
+      <div
+        class="w-full lg:w-2/5 mb-8 lg:mb-0 flex justify-center lg:justify-end"
+      >
+        <!-- Replace with your SVG -->
+        <img
+          src="./assets/heroSection/Good_team-bro.svg"
+          alt="SVG Illustration"
+          class="w-full h-auto max-w-xs lg:max-w-full"
+        />
+      </div>
+    </section>
 
-    <!-- Right Section (SVG) -->
-    <div class="w-full lg:w-2/5 mb-8 lg:mb-0 flex justify-center lg:justify-end">
-      <!-- Replace with your SVG -->
-      <img src="./assets/undraw_grades_re_j7d6.svg" alt="SVG Illustration"
-        class="w-full h-auto max-w-xs lg:max-w-full">
-    </div>
-  </section>
-
-  <!-- <section class="bg-white py-24 sm:py-32">
+    <!-- <section class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
         <div class="lg:pr-8 lg:pt-4">
@@ -173,7 +249,7 @@
     </div>
   </section> -->
 
-  <!-- <section>
+    <!-- <section>
     <div class="bg-white py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
@@ -247,232 +323,439 @@
     </div>
   </section> -->
 
-  <section id="about-us"  class="bg-gray-100  px-16 pt-32">
-    <div class="container mx-auto">
-      <h2 class="text-center text-base  underline-offset-1 leading-7 mt-4 mb-14">About Us</h2>
-      <div class="flex flex-col md:flex-row">
-        <div class="md:w-1/2 lg:px-8 lg:py-24" >
-          <img src="./assets/undraw_meet_the_team_re_4h08-community & response management.svg " alt="Image 1" class="w-full h-full object-cover rounded-lg">
-        </div>
-        <div class="md:w-1/2 p-4">
-  
-          <h1 class=" text-4xl font-bold text-gray-800 mb-4"> <span class="bg-color-green ">A Legacy of Experience.</span> A Vision for the Future.</h1>
-          <p class="text-gray-600 mt-8 mb-4">Synkrit Digital Marketing was born from a simple truth: the digital landscape is constantly evolving With 15 years in the service industry, we witnessed the power of digital marketing firsthand. We saw businesses flourish with the right approach and struggle with the wrong one.That's why we decided to combine our experience with a team of passionate digital specialists.
+    <section id="about-us" class="bg-gray-100 px-16 pt-32 hidden">
+      <div class="container mx-auto">
+        <h2
+          class="text-center text-base underline-offset-1 leading-7 mt-4 mb-14"
+        >
+          About Us
+        </h2>
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 lg:px-8 lg:py-24">
+            <img
+              src="./assets/undraw_meet_the_team_re_4h08-community & response management.svg "
+              alt="Image 1"
+              class="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+          <div class="md:w-1/2 p-4">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">
+              <span class="bg-color-green">A Legacy of Experience.</span> A
+              Vision for the Future.
+            </h1>
+            <p class="text-gray-600 mt-8 mb-4">
+              Synkrit Digital Marketing was born from a simple truth: the
+              digital landscape is constantly evolving With 15 years in the
+              service industry, we witnessed the power of digital marketing
+              firsthand. We saw businesses flourish with the right approach and
+              struggle with the wrong one.That's why we decided to combine our
+              experience with a team of passionate digital specialists.
             </p>
-            <p class="text-gray-600 mb-4" >At Synkrit, we're not just about trends; we're about understanding your unique brand and target audience. We believe in the power of collaboration, fostering a close-knit team environment that fuels creativity and innovation.</p>
-          <p class="text-gray-600 mb-4">Our success is measured by yours. We're driven by exceeding expectations and delivering results that make a real difference to your bottom line.</p>
-          <div class="flex pt-4">
-            <div class="mx-4 text-left">
-              <h3 class="font-bold text-gray-800">Years</h3>
-              <p class="text-6xl font-bold text-black">15+</p>
-            </div>
-            <div class="mx-4 text-left">
-              <h3 class="font-bold text-gray-800">Clients</h3>
-              <p class="text-6xl font-bold text-black">100+</p>
+            <p class="text-gray-600 mb-4">
+              At Synkrit, we're not just about trends; we're about understanding
+              your unique brand and target audience. We believe in the power of
+              collaboration, fostering a close-knit team environment that fuels
+              creativity and innovation.
+            </p>
+            <p class="text-gray-600 mb-4">
+              Our success is measured by yours. We're driven by exceeding
+              expectations and delivering results that make a real difference to
+              your bottom line.
+            </p>
+            <div class="flex pt-4">
+              <div class="mx-4 text-left">
+                <h3 class="font-bold text-gray-800">Years</h3>
+                <p class="text-6xl font-bold text-black">15+</p>
+              </div>
+              <div class="mx-4 text-left">
+                <h3 class="font-bold text-gray-800">Clients</h3>
+                <p class="text-6xl font-bold text-black">100+</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- our services -->
-  <section id="services">
-    <div class="bg-white py-24 sm:py-32">
-      <h2 class="text-center text-base  underline-offset-1 leading-7 mt-4 mb-14">Services</h2>
-      <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div class="flex flex-col md:flex-row items-start justify-start space-y-4 md:space-y-0 md:space-x-8">
-          <!-- Heading Section -->
-          <div class="flex flex-col md:flex-row ">
-            <h1 class="text-3xl font-bold text-left ">
-              <span class="bg-color-green">
-                Social Media Strategy & Planning
-              </span>
-            </h1>
-          </div>
-          <!-- Paragraph Section -->
-          <p class="text-gray-600 text-left">
-            Tailored strategies to align with your brand goals, Reach the right audience at the right time, Boost
-            engagement, build awareness, and foster relationships.
+    <section class="bg-gray-100 mx-auto md:mx-16 md:rounded-3xl py-16">
+      <h2 class="text-center font-semibold text-2xl">About us</h2>
+      <!-- Our story secion of About us -->
+      <h2
+        class="text-center items-center text-2xl my-4 font-semibold md:text-left md:hidden"
+      >
+        <span class="bg-color-green px-2">Our Story</span>
+      </h2>
+      <div class="flex-col md:flex md:flex-row items-center">
+        <div class="md:w-1/2 w-full">
+          <img
+            src="./assets/aboutUs/team-goals-pana.svg"
+            class="h-[70%] w-[70%] md:h-[85%] md:w-[85%] lg:h-[70%] lg:w-[70%] p-2 mx-auto object-cover"
+          />
+        </div>
+        <div class="md:w-1/2 mt-4 px-16 w-full">
+          <h2
+            class="hidden items-center text-2xl my-4 font-semibold md:text-left md:block"
+          >
+            <span class="bg-color-green px-2">Our Story</span>
+          </h2>
+          <p class="text-justify">
+            Founded in 2020, Synkrit Media emerged from a simple yet powerful
+            vision: to bridge the gap between brands and their digital
+            potential. In a world where online presence can make or break a
+            business, we set out to be the catalysts of digital transformation.
+          </p>
+          <p class="text-justify mt-4">
+            At Synkrit Media, we're more than just a digital marketing agency.
+            We're a team of passionate digital natives, creative minds, and
+            analytical thinkers. Our diverse expertise spans social media
+            management, content creation, web development, influencer marketing,
+            and targeted advertising across platforms like Facebook, Instagram,
+            Google and many more.
           </p>
         </div>
-
-<!-- main container for gird -->
-        <div class="mx-auto mt-12 max-w-2xl sm:mt-20 lg:mt-16 lg:max-w-7xl">
-          <dl class="grid max-w-xl grid-cols-1 gap-x-16 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-
-            <!-- first card -->
-            <div class=" px-8 text-black text-md rounded-3xl border border-2 border-black border-solid py-4 transition hover:text-white border-b-8">
-              <div class="flex flex-row">
-                <div>
-                  <div class=" text-base font-semibold leading-7 text-black">
-                    <h3><span class="bg-color-green">Competitor Analysis and Strategy Development</span></h3>
-                  </div>
-                  <div class="mt-2 pt-6 text-base leading-7 text-gray-600">Uncover hidden opportunities with our in-depth competitor analysis. Gain a competitive edge with tailored strategies.
-                  </div>
-                </div>
-                <div>
-                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <!-- second card -->
-            <div class=" px-8 text-white text-md rounded-3xl border border-2 border-black border-solid py-4 transition bg-black border-b-8">
-              <div class="flex flex-row">
-                <div>
-                  <div class="text-base font-semibold leading-7 text-black">
-                    <h3><span class="bg-white">Social Media Strategy Development</span></h3>
-                  </div>
-                  <div class="mt-2 pt-6 text-white text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
-                    adipiscing
-                    suspendisse semper morbi. Odio urna massa nunc massa.
-                  </div>
-                </div>
-                <div>
-                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <!-- 3rd card -->
-            
-            
-            <div class=" px-8 text-white text-md rounded-3xl border border-2 border-black border-solid py-4 transition bg-black border-b-8">
-              <div class="flex flex-row">
-                <div>
-                  <div class="text-base font-semibold leading-7 text-black">
-                    <h3><span class="bg-white">Social Media Analytics and Reporting</span></h3>
-                  </div>
-                  <div class="mt-2 pt-6 text-white text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
-                    adipiscing
-                    suspendisse semper morbi. Odio urna massa nunc massa.
-                  </div>
-                </div>
-                <div>
-                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <!-- 4th card -->
-            <div class=" px-8 text-black text-md rounded-3xl border border-2 border-black border-solid py-4 transition hover:text-white border-b-8">
-              <div class="flex flex-row">
-                <div>
-                  <div class=" text-base font-semibold leading-7 text-black">
-                    <h3><span class="bg-color-green">Competitor Analysis and Strategy Development</span></h3>
-                  </div>
-                  <div class="mt-2 pt-6 text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
-                    adipiscing
-                    suspendisse semper morbi. Odio urna massa nunc massa.
-                  </div>
-                </div>
-                <div>
-                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
-                </div>
-              </div>
-            </div>
-
-          </dl>
-        </div>
       </div>
-    </div>
-  </section>
+      <!-- Our Approach secion of About us -->
+      <h2
+        class="text-center items-center text-2xl my-4 font-semibold md:text-left md:hidden mt-16"
+      >
+        <span class="bg-color-green px-2">Our Approach</span>
+      </h2>
 
-  <section >
-    <div class="bg-white py-4 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div class="flex flex-col md:flex-row items-start justify-start space-y-4 md:space-y-0 md:space-x-8">
-          <!-- Heading Section -->
-          <div class="flex flex-col md:flex-row ">
-            <h1 class="text-3xl font-bold text-left ">
-              <span class="bg-color-green">
-                Social Media Strategy & Planning
-              </span>
-            </h1>
-          </div>
-          <!-- Paragraph Section -->
-          <p class="text-gray-600 text-left">
-            Tailored strategies to align with your brand goals, Reach the right audience at the right time, Boost
-            engagement, build awareness, and foster relationships.
+      <div class="flex-col-reverse md:flex md:flex-row-reverse items-center">
+        <div class="md:w-1/2 w-full">
+          <img
+            src="./assets/aboutUs/Team-goals-approach.svg"
+            class="h-[70%] w-[70%] md:h-[85%] md:w-[85%] p-2 mx-auto object-cover"
+          />
+        </div>
+        <div class="md:w-1/2 mt-4 px-16 w-full">
+          <h2
+            class="hidden items-center text-2xl my-4 font-semibold md:text-left md:block"
+          >
+            <span class="bg-color-green px-2">Our Approach</span>
+          </h2>
+          <p class="text-justify">
+            We believe in the power of synergy – the idea that the whole is
+            greater than the sum of its parts. This philosophy is at the core of
+            our name, Synkrit, and it drives our approach to digital marketing:
           </p>
-        </div>
-
-<!-- main container for gird -->
-        <div class="mx-auto mt-12 max-w-2xl sm:mt-20 lg:mt-16 lg:max-w-7xl">
-          <dl class="grid max-w-xl grid-cols-1 gap-x-16 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-
-            <!-- first card -->
-            <div class=" px-8 text-black text-md rounded-3xl border border-2 border-black border-solid py-4 transition hover:text-white border-b-8">
-              <div class="flex flex-row">
-                <div>
-                  <div class=" text-base font-semibold leading-7 text-black">
-                    <h3><span class="bg-color-green">Competitor Analysis and Strategy Development</span></h3>
-                  </div>
-                  <div class="mt-2 pt-6 text-base leading-7 text-gray-600">Uncover hidden opportunities with our in-depth competitor analysis. Gain a competitive edge with tailored strategies.
-                  </div>
-                </div>
-                <div>
-                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <!-- second card -->
-            <div class=" px-8 text-white text-md rounded-3xl border border-2 border-black border-solid py-4 transition bg-black border-b-8">
-              <div class="flex flex-row">
-                <div>
-                  <div class="text-base font-semibold leading-7 text-black">
-                    <h3><span class="bg-white">Social Media Strategy Development</span></h3>
-                  </div>
-                  <div class="mt-2 pt-6 text-white text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
-                    adipiscing
-                    suspendisse semper morbi. Odio urna massa nunc massa.
-                  </div>
-                </div>
-                <div>
-                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <!-- 3rd card -->
-            
-            
-            <div class=" px-8 text-white text-md rounded-3xl border border-2 border-black border-solid py-4 transition bg-black border-b-8">
-              <div class="flex flex-row">
-                <div>
-                  <div class="text-base font-semibold leading-7 text-black">
-                    <h3><span class="bg-white">Social Media Analytics and Reporting</span></h3>
-                  </div>
-                  <div class="mt-2 pt-6 text-white text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
-                    adipiscing
-                    suspendisse semper morbi. Odio urna massa nunc massa.
-                  </div>
-                </div>
-                <div>
-                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <!-- 4th card -->
-            <div class=" px-8 text-black text-md rounded-3xl border border-2 border-black border-solid py-4 transition hover:text-white border-b-8">
-              <div class="flex flex-row">
-                <div>
-                  <div class=" text-base font-semibold leading-7 text-black">
-                    <h3><span class="bg-color-green">Competitor Analysis and Strategy Development</span></h3>
-                  </div>
-                  <div class="mt-2 pt-6 text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus semper
-                    adipiscing
-                    suspendisse semper morbi. Odio urna massa nunc massa.
-                  </div>
-                </div>
-                <div>
-                    <img src="./assets/undraw_social_strategy_re_mk87.svg" alt="">
-                </div>
-              </div>
-            </div>
-
-          </dl>
+          <div class="text-justify mt-4">
+            <p class="my-4">
+              <span class="font-bold">Data-Driven Strategy:</span> We harness
+              the power of analytics to craft strategies that deliver measurable
+              results.<br />
+            </p>
+            <p class="my-4">
+              <span class="font-bold">Creative Excellence:</span> Our team
+              pushes the boundaries of creativity to make your brand stand out
+              in the digital crowd.<br />
+            </p>
+            <p class="my-4">
+              <span class="font-bold">Customized Solutions:</span> We understand
+              that each brand is unique. That's why we tailor our services to
+              fit your specific needs and goals.<br />
+            </p>
+            <p class="my-4">
+              <span class="font-bold">Continuous Learning:</span> In the
+              ever-evolving digital landscape, we stay ahead of the curve,
+              constantly updating our skills and strategies.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- our services -->
+    <section id="services">
+      <div class="bg-white py-24 sm:py-32">
+        <h2
+          class="text-center text-base underline-offset-1 leading-7 mt-4 mb-14"
+        >
+          Services
+        </h2>
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div
+            class="flex flex-col md:flex-row items-start justify-start space-y-4 md:space-y-0 md:space-x-8"
+          >
+            <!-- Heading Section -->
+            <div class="flex flex-col md:flex-row">
+              <h1 class="text-3xl font-bold text-left">
+                <span class="bg-color-green">
+                  Social Media Strategy & Planning
+                </span>
+              </h1>
+            </div>
+            <!-- Paragraph Section -->
+            <p class="text-gray-600 text-left">
+              Tailored strategies to align with your brand goals, Reach the
+              right audience at the right time, Boost engagement, build
+              awareness, and foster relationships.
+            </p>
+          </div>
+
+          <!-- main container for gird -->
+          <div class="mx-auto mt-12 max-w-2xl sm:mt-20 lg:mt-16 lg:max-w-7xl">
+            <dl
+              class="grid max-w-xl grid-cols-1 gap-x-16 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+            >
+              <!-- first card -->
+              <div
+                class="px-8 text-black text-md rounded-3xl border border-2 border-black border-solid py-4 transition hover:text-white border-b-8"
+              >
+                <div class="flex flex-row">
+                  <div>
+                    <div class="text-base font-semibold leading-7 text-black">
+                      <h3>
+                        <span class="bg-color-green"
+                          >Competitor Analysis and Strategy Development</span
+                        >
+                      </h3>
+                    </div>
+                    <div class="mt-2 pt-6 text-base leading-7 text-gray-600">
+                      Uncover hidden opportunities with our in-depth competitor
+                      analysis. Gain a competitive edge with tailored
+                      strategies.
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/undraw_social_strategy_re_mk87.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- second card -->
+              <div
+                class="px-8 text-white text-md rounded-3xl border border-2 border-black border-solid py-4 transition bg-black border-b-8"
+              >
+                <div class="flex flex-row">
+                  <div>
+                    <div class="text-base font-semibold leading-7 text-black">
+                      <h3>
+                        <span class="bg-white"
+                          >Social Media Strategy Development</span
+                        >
+                      </h3>
+                    </div>
+                    <div
+                      class="mt-2 pt-6 text-white text-base leading-7 text-gray-600"
+                    >
+                      Morbi viverra dui mi arcu sed. Tellus semper adipiscing
+                      suspendisse semper morbi. Odio urna massa nunc massa.
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/undraw_social_strategy_re_mk87.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- 3rd card -->
+
+              <div
+                class="px-8 text-white text-md rounded-3xl border border-2 border-black border-solid py-4 transition bg-black border-b-8"
+              >
+                <div class="flex flex-row">
+                  <div>
+                    <div class="text-base font-semibold leading-7 text-black">
+                      <h3>
+                        <span class="bg-white"
+                          >Social Media Analytics and Reporting</span
+                        >
+                      </h3>
+                    </div>
+                    <div
+                      class="mt-2 pt-6 text-white text-base leading-7 text-gray-600"
+                    >
+                      Morbi viverra dui mi arcu sed. Tellus semper adipiscing
+                      suspendisse semper morbi. Odio urna massa nunc massa.
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/undraw_social_strategy_re_mk87.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- 4th card -->
+              <div
+                class="px-8 text-black text-md rounded-3xl border border-2 border-black border-solid py-4 transition hover:text-white border-b-8"
+              >
+                <div class="flex flex-row">
+                  <div>
+                    <div class="text-base font-semibold leading-7 text-black">
+                      <h3>
+                        <span class="bg-color-green"
+                          >Competitor Analysis and Strategy Development</span
+                        >
+                      </h3>
+                    </div>
+                    <div class="mt-2 pt-6 text-base leading-7 text-gray-600">
+                      Morbi viverra dui mi arcu sed. Tellus semper adipiscing
+                      suspendisse semper morbi. Odio urna massa nunc massa.
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/undraw_social_strategy_re_mk87.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-white py-4 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div
+            class="flex flex-col md:flex-row items-start justify-start space-y-4 md:space-y-0 md:space-x-8"
+          >
+            <!-- Heading Section -->
+            <div class="flex flex-col md:flex-row">
+              <h1 class="text-3xl font-bold text-left">
+                <span class="bg-color-green">
+                  Social Media Strategy & Planning
+                </span>
+              </h1>
+            </div>
+            <!-- Paragraph Section -->
+            <p class="text-gray-600 text-left">
+              Tailored strategies to align with your brand goals, Reach the
+              right audience at the right time, Boost engagement, build
+              awareness, and foster relationships.
+            </p>
+          </div>
+
+          <!-- main container for gird -->
+          <div class="mx-auto mt-12 max-w-2xl sm:mt-20 lg:mt-16 lg:max-w-7xl">
+            <dl
+              class="grid max-w-xl grid-cols-1 gap-x-16 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+            >
+              <!-- first card -->
+              <div
+                class="px-8 text-black text-md rounded-3xl border border-2 border-black border-solid py-4 transition hover:text-white border-b-8"
+              >
+                <div class="flex flex-row">
+                  <div>
+                    <div class="text-base font-semibold leading-7 text-black">
+                      <h3>
+                        <span class="bg-color-green"
+                          >Competitor Analysis and Strategy Development</span
+                        >
+                      </h3>
+                    </div>
+                    <div class="mt-2 pt-6 text-base leading-7 text-gray-600">
+                      Uncover hidden opportunities with our in-depth competitor
+                      analysis. Gain a competitive edge with tailored
+                      strategies.
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/undraw_social_strategy_re_mk87.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- second card -->
+              <div
+                class="px-8 text-white text-md rounded-3xl border border-2 border-black border-solid py-4 transition bg-black border-b-8"
+              >
+                <div class="flex flex-row">
+                  <div>
+                    <div class="text-base font-semibold leading-7 text-black">
+                      <h3>
+                        <span class="bg-white"
+                          >Social Media Strategy Development</span
+                        >
+                      </h3>
+                    </div>
+                    <div
+                      class="mt-2 pt-6 text-white text-base leading-7 text-gray-600"
+                    >
+                      Morbi viverra dui mi arcu sed. Tellus semper adipiscing
+                      suspendisse semper morbi. Odio urna massa nunc massa.
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/undraw_social_strategy_re_mk87.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- 3rd card -->
+
+              <div
+                class="px-8 text-white text-md rounded-3xl border border-2 border-black border-solid py-4 transition bg-black border-b-8"
+              >
+                <div class="flex flex-row">
+                  <div>
+                    <div class="text-base font-semibold leading-7 text-black">
+                      <h3>
+                        <span class="bg-white"
+                          >Social Media Analytics and Reporting</span
+                        >
+                      </h3>
+                    </div>
+                    <div
+                      class="mt-2 pt-6 text-white text-base leading-7 text-gray-600"
+                    >
+                      Morbi viverra dui mi arcu sed. Tellus semper adipiscing
+                      suspendisse semper morbi. Odio urna massa nunc massa.
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/undraw_social_strategy_re_mk87.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- 4th card -->
+              <div
+                class="px-8 text-black text-md rounded-3xl border border-2 border-black border-solid py-4 transition hover:text-white border-b-8"
+              >
+                <div class="flex flex-row">
+                  <div>
+                    <div class="text-base font-semibold leading-7 text-black">
+                      <h3>
+                        <span class="bg-color-green"
+                          >Competitor Analysis and Strategy Development</span
+                        >
+                      </h3>
+                    </div>
+                    <div class="mt-2 pt-6 text-base leading-7 text-gray-600">
+                      Morbi viverra dui mi arcu sed. Tellus semper adipiscing
+                      suspendisse semper morbi. Odio urna massa nunc massa.
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/undraw_social_strategy_re_mk87.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- <section>
     <div class="bg-white py-24 sm:py-32">
@@ -548,9 +831,7 @@
     </div>
   </section> -->
 
-
-
-  <!-- <section>
+    <!-- <section>
     <div class="bg-white py-24 sm:py-32">
       <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
         <div class="max-w-2xl">
@@ -578,30 +859,40 @@
 
   </section> -->
 
-
-  <footer class="bg-black text-white lg:round lg:rounded-3xl py-8 px-8 lg:mx-16 lg:mb-10  ">
-    <div class="container mx-auto">
-      <div class="flex justify-between">
-        <div class="flex flex-col max-w-3xl space-y-4">
-          <p class="text-sm">For a house restaurant, we implemented a targeted SEO campaign that resulted in a 25% increase in website traffic and a 15% increase in sales.</p>
-          <a href="#" class="text-blue-500 hover:text-blue-300">Learn more</a>
-        </div>
-        <div class="flex flex-col space-y-4">
-          <p class="text-sm">For a B2B software company, we developed an SEO strategy that resulted in a 50% increase in organic traffic and a 20% increase in conversions.</p>
-          <a href="#" class="text-blue-500 hover:text-blue-300">Learn more</a>
-        </div>
-        <div class="flex flex-col space-y-4">
-          <p class="text-sm">For a small online store, we created a social media campaign that resulted in a 30% increase in followers and a 15% increase in online sales.</p>
-          <a href="#" class="text-blue-500 hover:text-blue-300">Learn more</a>
+    <footer
+      class="bg-black text-white lg:round lg:rounded-3xl py-8 px-8 lg:mx-16 lg:mb-10"
+    >
+      <div class="container mx-auto">
+        <div class="flex justify-between">
+          <div class="flex flex-col max-w-3xl space-y-4">
+            <p class="text-sm">
+              For a house restaurant, we implemented a targeted SEO campaign
+              that resulted in a 25% increase in website traffic and a 15%
+              increase in sales.
+            </p>
+            <a href="#" class="text-blue-500 hover:text-blue-300">Learn more</a>
+          </div>
+          <div class="flex flex-col space-y-4">
+            <p class="text-sm">
+              For a B2B software company, we developed an SEO strategy that
+              resulted in a 50% increase in organic traffic and a 20% increase
+              in conversions.
+            </p>
+            <a href="#" class="text-blue-500 hover:text-blue-300">Learn more</a>
+          </div>
+          <div class="flex flex-col space-y-4">
+            <p class="text-sm">
+              For a small online store, we created a social media campaign that
+              resulted in a 30% increase in followers and a 15% increase in
+              online sales.
+            </p>
+            <a href="#" class="text-blue-500 hover:text-blue-300">Learn more</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-
-
-  <script src="./js/app.js"></script>
-  <script src="./js/navbar.js"></script>
-</body>
-
+    <script src="./js/app.js"></script>
+    <script src="./js/navbar.js"></script>
+  </body>
 </html>
