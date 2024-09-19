@@ -89,74 +89,76 @@
           <li>
             <a
               href="#about-us"
-              class="hover:bg-color-green p-2 px-3 rounded-md transition"
+              class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition"
               >About Us</a
             >
           </li>
           <li>
             <a
               href="#services"
-              class="hover:bg-color-green p-2 px-3 rounded-md transition"
+              class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition"
               >Our Services</a
             >
           </li>
           <li>
             <a
               href="#team"
-              class="hover:bg-color-green p-2 px-3 rounded-md transition"
+              class="hover:bg-[#aaff02] p-2 px-3 rounded-md transition"
               >Our Team</a
             >
           </li>
           <li>
             <a
               href="#contact"
-              class="hover:bg-color-green p-2 px-3 rounded-md transition"
+              class="text-black text-md rounded-md border border-2 border-black border-solid py-1 px-4 hover:bg-black hover:text-white transition"
               >Contact Us</a
             >
           </li>
           <!-- "Let's Start" Button -->
-          <li>
+          <!-- <li>
             <a
               href="#start"
               class="text-black text-md rounded-md border border-2 border-black border-solid py-1 px-4 hover:bg-black hover:text-white transition"
             >
               Let's start
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
 
       <!-- Mobile Menu (visible on small screens) -->
       <div id="mobile-menu" class="hidden lg:hidden px-4 pb-4">
-        <ul class="space-y-4">
+        <ul class="flex flex-col space-y-4 items-center mt-8">
           <li>
-            <a href="#services" class="block hover:text-green-500 transition"
-              >Our Services</a
-            >
-          </li>
-          <li>
-            <a href="#about-us" class="block hover:text-green-500 transition"
+            <a href="#about-us" class="block hover:bg-[#aaff02] transition"
               >About Us</a
             >
           </li>
           <li>
-            <a href="#our-team" class="block hover:text-green-500 transition"
+            <a href="#services" class="block hover:bg-[#aaff02] transition"
+              >Our Services</a
+            >
+          </li>
+          <li>
+            <a href="#team" class="block hover:bg-[#aaff02] transition"
               >Our Team</a
             >
           </li>
           <li>
-            <a href="#contact" class="block hover:text-green-500 transition"
+            <a
+              href="#contact"
+              class="text-black block font-bold text-md rounded-md border border-2 border-black border-solid py-1 px-4 hover:bg-black hover:text-white transition"
               >Contact Us</a
             >
           </li>
-          <li>
+          <!-- <li>
             <a
               href="#start"
               class="color-green block font-bold text-md rounded-md border border-2 border-black border-solid text-green-800 py-1 px-4 hover:bg-black transition"
             >
               Let's build
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -272,7 +274,7 @@
             class="h-[70%] w-[70%] md:h-[85%] md:w-[85%] p-2 mx-auto object-cover"
           />
         </div>
-        <div class="lg:w-1/2 mt-4 px-16 w-full">
+        <div class="lg:w-1/2 mt-8 px-16 w-full">
           <h2
             class="hidden items-center text-2xl my-4 font-semibold lg:text-left lg:block"
           >
@@ -552,7 +554,11 @@
     </section>
 
     <!-- Our Team -->
-    <section class="mx-auto md:mx-16 py-16 scroll-my-16" id="our-team">
+    <section
+      class="mx-auto md:mx-16 py-16 scroll-my-16"
+      id="our-team"
+      id="team"
+    >
       <h2 class="text-center font-semibold text-2xl mb-8">Our Team</h2>
       <div
         class="flex flex-col md:flex-row justify-center gap-x-24 px-16 gap-y-6"
@@ -620,9 +626,9 @@
     <!-- Contact us -->
 
     <section
-      id="contactus"
+      id="contact"
       class="bg-black text-white p-10 lg:p-14 lg:p-20 lg:m-34 lg:mx-16 lg:rounded-3xl my-8"
-      style="background-image: url('./assets/map.svg')"
+      style="background-image: url('./assets/map.webp')"
     >
       <div class="container py-14 px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
