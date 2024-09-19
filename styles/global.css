@@ -1,9 +1,11 @@
 *{
   scroll-behavior:smooth;
   transition-duration: 20ms;
-  --accent-green: #aaff02
+  
 }
-
+:root{
+  --accent-green: #aaff02;
+}
 body{
   background-color: rgb(234, 234, 234);
 }
