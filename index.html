@@ -63,7 +63,7 @@
       >
         <!-- Logo -->
         <!-- <div class="logo font-bold text-xl">LOGO</div> -->
-        <a href="#hero-section">
+        <a href="#home">
           <img src="./assets/logo/logo_full.svg" alt="logo" class="h-6" />
         </a>
         <!-- Mobile Menu Button (hidden on larger screens) -->
@@ -166,7 +166,7 @@
     <!-- Hero Section -->
     <section
       class="flex flex-col-reverse lg:flex-row lg:h-screen items-center justify-between py-28 px-4 lg:py-40 lg:px-24"
-      id="hero-section"
+      id="home"
     >
       <!-- Left Section -->
       <div class="w-full lg:w-3/5 space-y-8">
@@ -175,14 +175,14 @@
         >
           Supercharge Your Business Growth with Expert Social Media Strategies
         </h1>
-        <h2
-          class="text-center text-justify lg:text-left lg:text-sm text-xl  text-black lg:mr-8 mx-8 md:mx-8 lg:mx-0"
+        <p
+          class="lg:mr-8 mx-8 md:mx-8 lg:mx-0"
         >
           At Synkrit Media, we transform brands with data-driven strategies and
           innovative solutions. Our expert team crafts targeted campaigns to
           drive real results, engage your audience, and maximize ROI. Elevate
           your business with campaigns designed for success.
-        </h2>
+      </p>
         <p class="text-gray-500"></p>
         <div class="flex justify-center lg:justify-start">
           <a
@@ -234,7 +234,7 @@
         </div>
         <div class="lg:w-1/2 mt-4 px-16 w-full">
           <h2
-            class="hidden items-center text-2xl my-4 font-semibold md:text-left lg:block"
+            class="hidden items-center text-2xl  my-4 font-semibold md:text-left lg:block"
           >
             <span class="bg-color-green px-2">Our Story</span>
           </h2>
@@ -276,7 +276,7 @@
         </div>
         <div class="lg:w-1/2 mt-8 px-16 w-full">
           <h2
-            class="hidden items-center text-2xl my-4 font-semibold lg:text-left lg:block"
+            class="hidden items-center text-2xl  my-4 font-semibold lg:text-left lg:block"
           >
             <span class="bg-color-green px-2">Our Approach</span>
           </h2>
@@ -332,7 +332,7 @@
             <li
               class="h-60 border-2 border-black bg-black text-white rounded-3xl border-b-8 p-8"
             >
-              <span class="font-bold">Cutting-Edge Strategies</span>
+              <span class="font-bold bg-white text-black">Cutting-Edge Strategies</span>
               <p class="mt-4">
                 In the fast-paced digital world, we stay ahead. We pledge to
                 employ the latest, most effective digital marketing techniques
@@ -354,7 +354,7 @@
             <li
               class="h-60 border-2 border-black bg-black text-white rounded-3xl border-b-8 p-8"
             >
-              <span class="font-bold">Responsive Support</span>
+              <span class="font-bold bg-white text-black">Responsive Support</span>
               <p class="mt-4">
                 Your success is our priority. Count on us for swift, attentive
                 service and expert guidance whenever you need it.
@@ -373,7 +373,7 @@
             <li
               class="h-60 border-2 border-black bg-black text-white rounded-3xl border-b-8 p-8"
             >
-              <span class="font-bold">Continuous Optimizations</span>
+              <span class="font-bold bg-white text-black">Continuous Optimizations</span>
               <p class="mt-4">
                 Digital marketing is not a "set it and forget it" endeavor. We
                 promise ongoing refinement of our strategies to maximize your
@@ -405,48 +405,92 @@
     </section>
 
     <!-- our services -->
-    <section id="services" class="px-24 scroll-my-24">
-      <div class="bg-white my-16">
+    <section id="services" class="mt-32 px-24 scroll-my-24">
+      <div class="bg-white my-8">
         <h2 class="text-center font-semibold text-2xl">Our Services</h2>
       </div>
-      <div class="flex flex-col gap-x-8 gap-y-8 lg:flex-row">
+      
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <article class="border-2 border-b-8 border-black rounded-3xl p-8">
           <span class="font-bold bg-color-green">Social Media Management</span>
-          <p class="mt-4">
-            Build a strong online presence with our custom social media
-            management solutions. We handle content creation, community
-            engagement, and performance tracking to ensure your brand stands out
-            and connects with your audience effectively
-          </p>
+          <p class="mt-4">Build a strong online presence with our custom social media management solutions. We handle content creation, community engagement, and performance tracking to ensure your brand stands out and connects with your audience effectively.</p>
+          <ul class="list-disc my-4 px-8 space-y-4">
+            <li>Content Creation and Management</li>
+            <!-- <p>This includes creating engaging and relevant content, scheduling posts, and managing social media calendars.</p> -->
+            <li>Community Engagement</li>
+            <!-- <p>This involves responding to comments, messages, and mentions, fostering a positive online community, and building relationships with followers.</p> -->
+            <li>Analytics and Reporting</li>
+            <!-- <p>This entails tracking key metrics, analyzing performance, and providing regular reports on social media activities.</p> -->
+            <li>Advertising and Paid Promotion</li>
+            <!-- <p>This involves managing paid social media campaigns, targeting specific audiences, and optimizing ad performance.</p> -->
+          </ul>
         </article>
-        <article
-          class="border-2 border-b-8 border-black text-white bg-black rounded-3xl p-8"
-        >
+        <article class="border-2 border-b-8 border-black text-white bg-black rounded-3xl p-8">
           <span class="font-bold text-black bg-white">Paid Advertising</span>
-          <p class="mt-4">
-            Maximize your ROI with data-driven ad campaigns on Meta and Google.
-            Our team optimizes every aspect of your ads to reach the right
-            audience, increase conversions, and drive measurable growth
-          </p>
+          <p class="mt-4">Maximize your ROI with data-driven ad campaigns on Meta and Google. Our team optimizes every aspect of your ads to reach the right audience, increase conversions, and drive measurable growth.</p>
+          
+        
+          <ul class="list-disc my-4 px-8 space-y-4">
+            <li>Campaign Strategy Development</li>
+            <!-- <p>Define clear objectives and goals for the advertising campaigns.
+              Conduct thorough keyword research and audience targeting.
+              Develop comprehensive campaign strategies tailored to the client's business and target audience.</p> -->
+            <li>Ad Creation and Optimization</li>
+            <!-- <p>Design and create engaging ad creatives that resonate with the target audience.
+              Optimize ad copy, images, and landing pages for maximum performance.
+              Continuously monitor and adjust ad campaigns based on performance data.</p> -->
+            <li>Budget Management</li>
+            <!-- <p>Develop and manage advertising budgets effectively.
+              Allocate budget across different campaigns and ad groups.
+              Track and analyze spending to ensure optimal ROI.</p> -->
+            <li>Performance Tracking and Analysis</li>
+            <!-- <p>Utilize platform analytics tools to track campaign performance metrics.
+              Analyze key metrics such as click-through rate (CTR), conversion rate, and return on investment (ROI).
+              Identify areas for improvement and make data-driven optimizations</p> -->
+            <!-- <li>Reporting and Insights</li> -->
+             <!-- <p>Provide regular reports on campaign performance and key metrics.
+              Offer actionable insights and recommendations for future campaigns.
+              Communicate effectively with clients and stakeholders.</p> -->
+          </ul>
         </article>
         <article class="border-2 border-b-8 border-black rounded-3xl p-8">
           <span class="font-bold bg-color-green">Web Development</span>
-          <p class="mt-4">
-            Turn visitors into customers with our expertly designed landing
-            pages and websites. We focus on creating compelling, user-friendly
-            pages that drive engagement and boost your conversion rates
-          </p>
+          <p class="mt-4">Turn visitors into customers with our expertly designed landing pages and websites. We focus on creating compelling, user-friendly pages that drive engagement and boost your conversion rates.</p>
+          <ul class="list-disc my-4 px-8 space-y-4">
+            <li>Website Planning and Strategy</li>
+            <!-- <p>Understand the client's business objectives and target audience.
+              Develop a comprehensive website strategy, including goals, messaging, and content.
+              Create wireframes and sitemaps to visualize the structure and layout of the website.</p> -->
+            <li>Design and User Experience (UX)</li>
+            <!-- <p>Design visually appealing and user-friendly interfaces that align with the client's brand.
+              Conduct user research and usability testing to ensure a positive user experience.
+              Optimize website layout, navigation, and content for easy access and understanding.</p> -->
+            <li>Development and Coding</li>
+            <!-- <p>Develop the website's front-end and back-end using appropriate technologies (HTML, CSS, JavaScript, CMS, etc.).
+              Ensure the website is responsive and compatible with different devices and browsers.
+              Optimize website performance for fast loading times.</p> -->
+            <li>Content Creation and Management</li>
+            <!-- <p>Create high-quality, engaging content that resonates with the target audience.
+              Optimize content for search engines (SEO) to improve visibility.
+              Manage and update website content regularly.</p> -->
+            <li>Testing and Quality Assurance</li>
+            <!-- <p>Thoroughly test the website for functionality, compatibility, and usability.
+              Address any bugs or issues before launching the website.</p> -->
+            <li>Maintenance and Support</li>
+            <!-- <p>Provide ongoing maintenance and support for the website.
+              Address technical issues and implement updates as needed</p> -->
+          </ul>
         </article>
       </div>
     </section>
 
     <!-- Our Team -->
     <section
-      class="mx-auto md:mx-16 py-16 scroll-my-16"
-      id="our-team"
+      class="mx-auto md:mx-16 py-16 scroll-my-6"
       id="team"
     >
-      <h2 class="text-center font-semibold text-2xl my-16">Our Team</h2>
+      <h2 class="text-center font-semibold text-2xl my-8">Our Team</h2>
       <div
         class="flex flex-col md:flex-row justify-center gap-x-24 px-16 gap-y-6"
       >
@@ -460,7 +504,7 @@
               class="w-3/4 h-3/4 mx-auto"
             /> -->
           </div>
-          <p class="text-white text-center text-xl my-4">
+          <p class="text-white  text-xl my-4">
             <span class="font-bold bg-black ">Mohan Krishna Bandarupalli</span>
           </p>
           <p>
@@ -479,7 +523,7 @@
               class="w-3/4 h-3/4 mx-auto"
             /> -->
           </div>
-          <p class="text-white text-center text-xl my-4">
+          <p class="text-white  text-xl my-4">
             <span class="font-bold bg-black ">Jaya Arun Kumar Tulluri</span>
           </p>
           <p>
@@ -499,7 +543,7 @@
               class="w-3/4 h-3/4 mx-auto"
             /> -->
           </div>
-          <p class="text-white text-center text-xl my-4">
+          <p class="text-white  text-xl my-4">
             <span class="font-bold bg-black ">Sanjay Kadugu</span>
           </p>
           <p>
@@ -514,22 +558,22 @@
 
     <section
       id="contact"
-      class="bg-black text-white p-10 lg:p-14 lg:p-20 lg:m-34 lg:mx-16 lg:rounded-3xl my-8"
+      class="bg-black text-white p-10 lg:p-14 lg:p-20 lg:m-34 lg:mx-16 lg:rounded-3xl my-6"
       style="background-image: url('./assets/map.webp')"
     >
-      <div class="container py-14 px-4">
+      <div class="container py-2 px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <div
               class="flex flex-col items-center justify-between my-auto gap-y-4"
             >
               <h2
-                class="text-center text-2xl lg:text-5xl font-semibold text-white"
+                class="text-center text-2xl lg:text-4xl font-semibold text-white"
               >
                 Have a project?
               </h2>
               <h2
-                class="text-center text-2xl lg:text-5xl font-semibold text-white"
+                class="text-center text-2xl lg:text-4xl font-semibold text-white"
               >
                 We would love to help :)
               </h2>
@@ -542,88 +586,80 @@
             </div>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="bg-white text-black p-6 rounded-lg shadow-md">
             <!-- <h2 class="text-black text-2xl font-bold mb-4">Contact Us</h2> -->
-            <form action="#" method="POST">
+          
+            <form  id="contact-form">
               <div class="mb-4">
-                <label class="block text-gray-700 font-semibold mb-2" for="name"
-                  >Name</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="w-full border rounded-md px-3 py-2"
-                  placeholder="Enter your name"
-                />
+                <label class="block text-gray-700 font-semibold mb-2" for="name">Name</label>
+                <input type="text" id="name" name="name" class="w-full border rounded-md px-3 py-2" placeholder="Enter your name" required>
               </div>
-
+            
               <div class="mb-4">
-                <label
-                  class="block text-gray-700 font-semibold mb-2"
-                  for="email"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="w-full border rounded-md px-3 py-2"
-                  placeholder="Enter your email"
-                />
+                <label class="block text-gray-700 font-semibold mb-2" for="email">Email</label>
+                <input type="email" id="email" name="email" class="w-full border rounded-md px-3 py-2" placeholder="Enter your email" required>
               </div>
-
+            
               <div class="mb-4">
-                <label
-                  class="block text-gray-700 font-semibold mb-2"
-                  for="phone"
-                  >Contact Number</label
-                >
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  class="w-full border rounded-md px-3 py-2"
-                  placeholder="Enter your contact number with county code"
-                />
+                <label class="block text-gray-700 font-semibold mb-2" for="phone">Contact Number</label>
+                <input type="tel" id="phone" name="phone" class="w-full border rounded-md px-3 py-2" placeholder="Contact number with country code" required>
               </div>
-
+            
               <div class="mb-4">
-                <label
-                  class="block text-gray-700 font-semibold mb-2"
-                  for="company_name"
-                  >Company Name</label
-                >
-                <input
-                  type="text"
-                  id="company_name"
-                  name="company_name"
-                  class="w-full border rounded-md px-3 py-2"
-                  placeholder="Enter your company name"
-                />
+                <label class="block text-gray-700 font-semibold mb-2" for="company_name">Company Name</label>
+                <input type="text" id="company_name" name="company_name" class="w-full border rounded-md px-3 py-2" placeholder="Enter your company name" required>
               </div>
-
+            
               <div class="mb-4">
-                <label
-                  class="block text-gray-700 font-semibold mb-2"
-                  for="message"
-                  >Message</label
-                >
-                <textarea
-                  id="message"
-                  name="message"
-                  class="w-full border rounded-md px-3 py-2"
-                  placeholder="Enter your message"
-                ></textarea>
+                <label class="block text-gray-700 font-semibold mb-2" for="message">Message</label>
+                <textarea id="message" name="message" class="w-full border rounded-md px-3 py-2" placeholder="Enter your message" required></textarea>
               </div>
-
-              <button
-                type="submit"
-                class="bg-black hover:bg-color-green text-white font-bold px-4 py-2 rounded-md"
-              >
-                Send Message
-              </button>
+            
+              <button type="submit" class="bg-black hover:bg-color-green text-white font-bold px-4 py-2 rounded-md" onclick="openEmail()">Send Message</button>
             </form>
+            
+            <script>
+              function openEmail() {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const company_name = document.getElementById('company_name').value;
+                const message = document.getElementById('message').value;
+             
+                // Validate form fields
+                if (!name || !email || !phone || !company_name || !message) {
+                  // Highlight empty fields in red
+                  const emptyFields = document.querySelectorAll('input:invalid, textarea:invalid');
+                  emptyFields.forEach(field => {
+                    field.classList.add('border-red-500');
+                  });
+                  alert('Please fill in all required fields.');
+                  return;
+                }
+            
+
+                // Validate phone number format
+                if (!phone.match(/\+\d{1,3}\d{8,14}/)) {
+                  alert('Please enter a valid phone number with country code.');
+                  return;
+                }
+
+                
+
+               
+                // If all fields are valid, proceed with sending the email
+                const subject = 'Contact Form Submission';
+                const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nCompany Name: ${company_name}\nMessage: ${message}`;
+            
+                const mailtoLink = `mailto:admin@synkrit.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                 // Display a confirmation message before redirecting
+  if (confirm('Thank you for reaching out to us! Click OK to open your email client.')) {
+    window.location.href = mailtoLink;
+  }
+                // window.location.href = mailtoLink;
+              }
+            </script>
+            
           </div>
         </div>
       </div>

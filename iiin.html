@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form Success</title>
+  <link href="https://unpkg.com/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="w-screen h-1/2 p-20 text-white"    style="background-image: url('./assets/map.webp')">
+        
+        <h1>Hi</h1>
+        <h1 class="text-center"> Synkrit </h1>
+      </div>
+      <div class="container mx-auto flex justify-center items-center w-full px-4 py-8">
+        <div class="bg-white text-black w-3/4 p-6 rounded-lg shadow-md">
+          <h1 class="text-3xl font-bold text-center text-blue-500">Welcome to Our Contact Form!</h1>
+      
+
+
+          !!!!!!!!!! form data !!!!!!!!!!
+
+
+          <p class="text-lg text-gray-700 mt-4 text-center">
+            Thank You for Contacting Us
+          </p>
+          <p class="text-lg text-gray-700 mt-4 text-center">
+            We appreciate your interest to know us better. We look forward to the opportunity to assist you.
+          </p>
+        </div>
+      </div>
+  </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link href="https://unpkg.com/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <form action="#" method="POST" id="contact-form">
+    <div class="mb-4">
+      <label class="block text-gray-700 font-semibold mb-2" for="name">Name</label>
+      <input type="text" id="name" name="name" class="w-full border rounded-md px-3 py-2" placeholder="Enter your name" required>
+    </div>
+    <button type="submit" class="bg-black hover:bg-color-green text-white font-bold px-4 py-2 rounded-md" onclick="openEmail()">Send Message</button>
+  </form>
+
+  <script>
+    function openEmail() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const company_name = document.getElementById('company_name').value;
+      const message = document.getElementById('message').value;
+
+      // ... phone number validation and form field validation ...
+
+      const subject = 'Contact Form Submission';
+      const body = `
+        **Name:** ${name}\n
+        **Email:** ${email}\n
+        **Phone:** ${phone}\n
+        **Company Name:** ${company_name}\n
+        **Message:** ${message}\n`;
+
+      const mailtoLink = `mailto:admin@synkrit.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+    }
+  </script>
+</body>
+</html>
